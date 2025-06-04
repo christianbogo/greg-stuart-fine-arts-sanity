@@ -1,5 +1,4 @@
-// src/app/test-gallery/page.tsx
-import { client } from "../../lib/sanity.client"; // Adjust path if needed
+import { client } from "../../lib/sanity.client";
 import { groq } from "next-sanity";
 
 async function getArtworks() {
@@ -30,5 +29,4 @@ export default async function TestGalleryPage() {
     </div>
   );
 }
-// Revalidate this page every 60 seconds (optional, for Incremental Static Regeneration)
 export const revalidate = 60;
